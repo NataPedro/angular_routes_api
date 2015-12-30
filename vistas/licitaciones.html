@@ -1,0 +1,32 @@
+   <div class="text-center">
+        <h1>Licitaciones</h1>
+
+        <table class="table table-bordered">
+        	<tr>
+        		<th>
+        			Código
+        		</th>
+        		<th>
+        			Nombre
+        		</th>
+        		<th>
+        			Fecha cierre
+        		</th>
+        	</tr>
+        	<tbody>
+        		<tr ng-repeat="x in Listado">
+        			<td>
+        				{{ x.CodigoExterno }}
+        			</td>
+        			<td>
+        				{{ x.Nombre }}
+        			</td>
+        			<td>
+        				{{ x.FechaCierre }}
+        			</td>
+        		</tr>
+        	</tbody>
+        </table>
+        <h3>{{ cargando }}</h3>
+
+    </div>

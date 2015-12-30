@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<html  ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <!-- load bootstrap and fontawesome via CDN -->
+  <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="bower_components/sweetalert/dist/sweetalert.css">
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="script.js"></script>
+</head>
+<body  ng-controller="mainController">
+
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Clase de angularjs </a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#licitaciones"><i class="fa fa-file"></i> Licitaciones</a></li>
+          <li><a href="#nosotros"><i class="fa fa-shield"></i> Nosotros</a></li>
+          <li><a href="#contacto"><i class="fa fa-comment"></i> Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main">
+    <div class="row">
+      <div class="container">
+        <div ng-view></div>  
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
